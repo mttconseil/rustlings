@@ -12,8 +12,21 @@
 // the quantity bought.
 // fn calculate_price_of_apples(???) -> ??? { ??? }
 
+fn calculate_price_of_apples(nb:i32) -> i32 {
+    if nb<41 {
+        nb*2
+    } else {
+        nb
+    }
+}
+
 fn main() {
     // You can optionally experiment here.
+    println!("le total pour {} pomme(s) est {}",2,calculate_price_of_apples(2));
+    println!("le total pour {} pomme(s) est {}",20,calculate_price_of_apples(20));
+    println!("le total pour {} pomme(s) est {}",40,calculate_price_of_apples(40));
+    println!("le total pour {} pomme(s) est {}",41,calculate_price_of_apples(41));
+    println!("le total pour {} pomme(s) est {}",50,calculate_price_of_apples(50));
 }
 
 // Don't change the tests!
